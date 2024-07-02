@@ -1,0 +1,177 @@
+// main containner div
+.smooth__wrapper {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  transition: none !important;
+
+  // main inner div
+  .smooth__content {
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    box-sizing: border-box;
+    width: 100%;
+    overflow: visible;
+  }
+}
+
+.main__div {
+  height: 17271px;
+  min-height: calc(100 * 9.11px);
+  pointer-events: none;
+
+  .base__containner {
+    order: 0;
+    place-self: auto;
+    grid-area: auto;
+    z-index: 0;
+    float: none;
+    flex-shrink: 1;
+    display: flex;
+    margin: 0px;
+    inset: 0px;
+    position: relative;
+    flex-basis: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 1909px;
+    height: 17271px;
+    padding: 0px 0px 16360px;
+    .base__content {
+      translate: none;
+      rotate: none;
+      scale: none;
+      left: 0px;
+      top: 0.001px;
+      margin: 0px;
+      max-width: 1909px;
+      width: 1909px;
+      max-height: 911px;
+      height: 911px;
+      padding: 0px;
+      box-sizing: border-box;
+      position: fixed;
+      transform: translate(0px, 0px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      will-change: transform;
+      right: 0;
+      bottom: 0;
+      .bgc__line {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        .line__svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .home__section {
+        --index: 0;
+        --size: 100;
+        background-color: var(--mainBg);
+        --index: 0;
+        --aspect-ratio: calc(var(--win-w) / var(--win-h));
+        --size: 100;
+        --offset: calc((100 / 10) * var(--scale));
+        --width: calc((var(--size) - var(--offset) * 2) * var(--vw));
+        --height: calc(var(--width) / var(--aspect-ratio));
+        --scale: calc(var(--size) / 100);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: calc(50% - var(--height) / 2);
+        bottom: calc(50% - var(--height) / 2);
+        left: calc(50% - var(--width2) / 2);
+        right: calc(50% - var(--width2) / 2);
+        margin: auto;
+        width: var(--width2);
+        // height: var(--height);
+        height: calc((100 - calc((100 / 10) * calc(100 / 100)) * 2) * 19.2px);
+        pointer-events: none;
+        --frame-factor: 1.033;
+        --width-outer: calc(var(--width2) * var(--frame-factor));
+        --height-outer: calc(var(--height) * var(--frame-factor));
+        --width-inner: var(--width2);
+        --height-inner: var(--height);
+        --frame-width: calc((var(--width-outer) - var(--width-inner)) / 2);
+        --frame-height: calc((var(--height-outer) - var(--height-inner)) / 2);
+        .border__inner {
+          position: absolute;
+          width: var(--width-inner);
+          height: calc(
+            calc((100 - calc((100 / 10) * calc(100 / 100)) * 2) * 19.298px) /
+              calc(1920 / 911)
+          );
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: calc(2 * 1px) solid #fff;
+          }
+        }
+        .home__section__content {
+          position: absolute;
+          position: absolute;
+          transform: scale(var(--scale));
+          width: calc(100% / var(--scale));
+          height: calc(100% / var(--scale));
+          will-change: transform;
+          .content__home {
+            width: calc(100% + calc(5.5 * 19.2px) * 2);
+            height: calc(100% + calc(5.5 * 19.2px) * 2);
+            left: calc(-1 * calc(5.5 * 19.2px));
+            top: calc(-1 * calc(5.5 * 19.2px));
+            pointer-events: none;
+            overflow: hidden;
+            position: relative;
+            .content__logo {
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+              z-index: 1;
+              pointer-events: none;
+              width: calc(7 * 21px);
+              height: calc(calc(calc(7 * 21px)) * 0.75);
+              position: absolute;
+              top: calc(calc(5.5 * 9.11px) + calc(21px * 4));
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+            .content__desc {
+            }
+            .content__title {
+            }
+            .content__btn__wrap {
+            }
+          }
+        }
+      }
+    }
+  }
+}
