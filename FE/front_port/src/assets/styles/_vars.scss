@@ -60,8 +60,11 @@
       calc(1920 / 911)
   );
   --height: calc((100 - calc((100 / 10) * calc(100 / 100)) * 2) * 19.2px);
-
   --scale: calc(100 / 100);
+
+  --section-padding-y: calc(calc(5.5 * 9.11px) + calc(21px * 4));
+  --logo-height: calc(calc(5.5 * 9.11px) + calc(21px * 4));
+  --spacer-3: calc(calc(5.5 * 9.11px) + calc(21px * 4));
 
   --spacer-05: calc(21px * 0.5);
   --spacer-025: calc(21px * 0.25);
@@ -71,6 +74,13 @@
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 10px 15px -3px #efefef, 0 4px 6px -4px #efefef;
+
+  --section-offset-x: calc(5.5 * 19.2px);
+  --section-offset-y: calc(5.5 * 9.11px);
+
+  --section-padding-x: calc(
+    calc(5.5 * 19.2px) + (calc(100 * 19.2px) / 6) - (calc(100 * 19.2px) / 10)
+  );
 
   --wp--preset--color--black: #000000;
   --wp--preset--color--cyan-bluish-gray: #abb8c3;
