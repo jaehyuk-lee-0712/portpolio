@@ -66,7 +66,7 @@
   position: fixed;
   z-index: 99999999;
   border-radius: 6px;
-  display: flex;
+  display: none;
   width: 550px !important;
   .accept__inner {
     border: 1px solid var(--white);

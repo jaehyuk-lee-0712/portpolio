@@ -1,7 +1,7 @@
 {
   "liveServer.settings.port": 5501,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": false,
+  "editor.formatOnPaste": true,
   "eslint.enable": true,
   "eslint.packageManager": "npm",
   "eslint.validate": [
@@ -14,6 +14,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "notebook.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "eslint.format.enable": true
 }
